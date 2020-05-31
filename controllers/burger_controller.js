@@ -43,7 +43,7 @@ router.delete('/api/burgers/:id', async (req,res) => {
 
 // HTML Route
 
-router.get('/', async (req, res) => {
+router.get('*', async (req, res) => {
   try {
     const burgers = await burger.getAllBurgers();
     res.render('index', {burger:burgers})
