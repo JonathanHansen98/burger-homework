@@ -1,0 +1,16 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+p {
+  display: inline;
+  margin-bottom: 0px;
+}
+
+.cell {
+  display: inline-block;
+  border-right: 2px solid rgba(0,0,0,.125);
+  background-color: #007bff;
+  color: white;
+  border-bottom-left-radius: .25rem;
+  border-top-left-radius: .25rem;

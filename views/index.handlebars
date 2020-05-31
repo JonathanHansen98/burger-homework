@@ -1,0 +1,88 @@
+<div class="container-fluid ">
+  <div class="row">
+    <div class="col-12">
+      <div class="jumbotron p-5 text-center">
+        <img src="./img/burger.png">
+      </div>
+    </div>
+  </div>
+  <div class="row overflow-scroll d-flex justify-content-around">
+    <div class="col-5">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="text-center">Burgers to Devour</h1>
+        </div>
+      </div>
+      {{#each burger}}
+      {{#unless devoured}}
+      <div class="row">
+        <div class="col-12">
+          <div class="card mt-3">
+            <div class="row">
+              <div class="col-6">
+                <div class="cell h-100 p-3">
+                  <p>Burger ID - {{id}}</p>
+                </div>
+                <p>{{name}}</p>
+              </div>
+              <div class="col-6 d-flex justify-content-end">
+                <button data-burger-id={{id}} class="btn btn-primary devour-btn">Devour Da Burger!</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {{/unless}}
+      {{/each}}
+    </div>
+    <div class="col-2">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="text-center">Eat da Burger</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          <div class="form-group">
+            <form id='enter-form'>
+              <input class="form-control my-3" id="name" type="text" placeholder="Add a burger" />
+              <button class="btn btn-primary btn-block" type="submit">Submit Da Burger!</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-5">
+      <div class="row">
+        <div class="col-12">
+          <h1 class="text-center">Devoured Burgers</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12">
+          {{#each burger}}
+          {{#if devoured}}
+          <div class="row">
+            <div class="col-12">
+              <div class="card mt-3">
+                <div class="row">
+                  <div class="col-6">
+                    <div class="cell h-100 p-3">
+                      <p>Burger ID - {{id}}</p>
+                    </div>
+                    <p>{{name}}</p>
+                  </div>
+                  <div class="col-6 d-flex justify-content-end">
+                    <button data-burger-id={{id}} class="btn btn-danger delete-btn">Delete Da Burger!</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {{/if}}
+          {{/each}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
