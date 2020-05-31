@@ -1,7 +1,5 @@
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: #323232;
-  color: rgb(214, 214, 214);
 }
 
 p {
@@ -11,47 +9,9 @@ p {
 
 .cell {
   display: inline-block;
-  border-right: 2px solid #14888b;
-  background-color: #14888b;
-  color: rgb(211, 211, 211);
+  border-right: 2px solid rgba(0,0,0,.125);
+  background-color: #007bff;
+  color: white;
   border-bottom-left-radius: .25rem;
   border-top-left-radius: .25rem;
-}
-
-.btn-primary {
-  background-color: #14888b;
-  border-color: #14888b;
-}
-
-.btn-primary:hover, .btn-primary:focus {
-  background-color:#0c5c5f;
-  border-color: #0c5c5f;
-  box-shadow: none;
-}
-
-.btn-danger {
-  background-color: #7e0b22;
-  border-color: #7e0b22;
-}
-
-.btn-danger:hover,.btn-danger:focus {
-  background-color: #61091a;
-  border-color: #61091a;
-}
-
-
-.jumbotron, .card {
-  background-color: #212121;
-}
-
-.navbar {
-  background-color: #323232;
-}
-
-i {
-  color: #212121;
-}
-
-i:hover {
-  color: #141414;
 }
