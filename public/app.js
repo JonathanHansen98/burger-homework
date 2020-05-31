@@ -31,4 +31,5 @@ $(document).ready(() => {
     })
     location.reload()
   })
+  $('[data-toggle="tooltip"]').tooltip()
 })
