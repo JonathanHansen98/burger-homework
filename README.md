@@ -16,7 +16,7 @@ My first FULL stack application, baby! This is served using handlebars and expre
 <img src="https://i.imgur.com/zAoRJ5r.png" width="100%" />
 
 ## Usage
-  User's can enter a burgername to enter the burger into a MySQL database, then, user's can click the 'devour' button, to move the burger to the 'devoured' side. User's also have the option to delete the burger after it has been devoured.
+  User's can enter a burger name to enter the burger into a MySQL database, then, user's can click the 'devour' button, to move the burger to the 'devoured' side. User's also have the option to delete the burger after it has been devoured.
 <hr>
 
 ## Questions
